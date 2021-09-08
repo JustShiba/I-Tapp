@@ -1,0 +1,75 @@
+.btn {
+  background: #2E1AAD;
+  border-radius: 8px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+
+.head__body {
+  width: 1144px;
+  margin: auto auto auto 132px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+.head__list-left {
+  width: 183px;
+  margin-left: 19px;
+}
+.head__link-active {
+  color: #2E1AAD !important;
+  display: block;
+  height: 100%;
+}
+.head__link-active:before {
+  margin-top: 49px;
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: #2E1AAD;
+  display: inline-block;
+}
+.head__list-right {
+  width: 240px;
+  margin-left: 235px;
+}
+.head__btns {
+  width: 215px;
+  margin-left: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.head__btn-white {
+  border: 1px solid #2E1AAD;
+  background-color: #fff;
+  padding: 9px 30px;
+  color: #2E1AAD;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+}
+
+/*# sourceMappingURL=/style.31c68860.css.map */
