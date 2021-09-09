@@ -24,6 +24,7 @@ $colorTwo: #F5F7FA
         align-items: center
         height: 80px
     &__logo
+        margin-left: -15px
     &__list-left
         width: 183px
         margin-left: 19px
@@ -86,7 +87,7 @@ $colorTwo: #F5F7FA
 
 .search
     &__body
-        margin: 25px 21.2% 0 21.2%
+        margin: 25px auto
         width: 1110px
         height: 74px
         border-radius: 8px
@@ -119,12 +120,25 @@ $colorTwo: #F5F7FA
     font-size: 14px
     line-height: 24px
     color: #000000
+    margin-block: 0
 
+.filter
+    padding: 8px 9px
+    font-family: Manrope
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: #231F20
+    width: 215px
+    border-radius: 4px
+    border: 1px solid #DDDDDD
+    background-color: inherit
 .results
     &__body
         width: 1110px
         height: 974px
-        margin: 30px 21.2%
+        margin: 30px auto
         background-color: $colorTwo
         display: flex
         flex-direction: row
@@ -132,5 +146,24 @@ $colorTwo: #F5F7FA
         max-width: 280px
         border: 1px solid #DDDDDD
         border-radius: 8px
-        padding: 5px 32px
+        padding: 0 32px
     &__title
+        margin-top: 28px
+    &__filter-drop
+        margin-top: 8px
+    &__filter-fromTo
+        margin-top: 0px
+        padding-left: 12px
+    &__title-fromTo
+        margin-top: 8px
+        font-weight: normal
+    &__row
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__clear
+        margin-top: 37px
+        font-weight: normal
+        font-size: 12px
+        line-height: 12px
+        color: #868686

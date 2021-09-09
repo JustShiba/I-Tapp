@@ -48,7 +48,26 @@
     <div class="results">
         <div class="results__body">
             <div class="results__filters">
-                <h5 class="title results__title">Order</h5>
+                <h4 class="title results__title">Order</h4>
+                <select class="filter results__filter-drop" name="relevance" id="relevance">
+                    <option value="relevance">By Relevance</option>
+                    <option value="name">By name</option>
+                </select>
+                <h4 class="title results__title">Salary range</h4>
+                <p class="title results__title-fromTo">From:</p>
+                <select class="filter results__filter-drop results__filter-fromTo" name="From" id="From">
+                    <option value="Any">£ Any</option>
+                    <option value="Any">£ Any</option>
+                </select>
+                <p class="title results__title-fromTo">To:</p>
+                <select class="filter results__filter-drop results__filter-fromTo" name="To" id="To">
+                    <option value="Any">£ Any</option>
+                    <option value="Any">£ Any</option>
+                </select>
+                <div class="results__row">
+                    <h4 class="title results__title">Job type</h4>
+                    <span class="title results__clear">Clear All</span>
+                </div>
             </div>
             <div class="results__list"></div>
         </div>
