@@ -36,9 +36,21 @@
             <form action="submit" class="search__form">
                 <input type="text" class="inp search__inp-manager" name="Construction manager" id="Manager" placeholder="Construction Manager">
                 <input type="text" class="inp search__inp-country" name="Country" id="Country" placeholder="London">
-                <input type="text" class="inp search__inp-dist" name="Distance" id="Distance" placeholder="10 km">
+                <select class="inp search__inp-dist" name="Distance" id="Distance">
+                    <option value="10 km">10 km</option>
+                    <option value="15 km">15 km</option>
+                    <option value="20 km">20 km</option>
+                </select>
                 <button type="submit" class="btn search__btn">Search</button>
             </form>
+        </div>
+    </div>
+    <div class="results">
+        <div class="results__body">
+            <div class="results__filters">
+                <h5 class="title results__title">Order</h5>
+            </div>
+            <div class="results__list"></div>
         </div>
     </div>
 </body>
