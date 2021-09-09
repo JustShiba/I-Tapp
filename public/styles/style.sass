@@ -1,5 +1,8 @@
+$colorOne: #2E1AAD
+$colorTwo: #F5F7FA
+
 .btn
-    background: #2E1AAD
+    background: $colorOne
     border-radius: 8px
     font-family: Manrope
     font-style: normal
@@ -10,7 +13,9 @@
     text-align: center
     color: #FFFFFF
     border: none
+
 .head
+    border-bottom: 1px solid #EBEBEB
     &__body
         width: 1144px
         margin: auto
@@ -23,7 +28,7 @@
         width: 183px
         margin-left: 19px
     &__link-active
-        color: #2E1AAD!important
+        color: $colorOne!important
         display: block
         height: 100%
         &:before
@@ -32,7 +37,7 @@
             width: 40px
             height: 2px
             position: absolute
-            background: #2E1AAD
+            background: $colorOne
             display: inline-block
     &__list-right
         width: 240px
@@ -43,13 +48,14 @@
         display: flex
         justify-content: space-between
     &__btn-white
-        border: 1px solid #2E1AAD
+        border: 1px solid $colorOne
         background-color: #fff
         padding: 9px 30px
-        color: #2E1AAD
+        color: $colorOne
     &__btn-blue
 
 .logo
+    
 .list
     list-style-type: none
     display: flex
@@ -65,4 +71,52 @@
     font-size: 14px
     line-height: 20px
     color: #999999
+
+.inp
+    padding: 13px 0 15px 20px
+    font-family: Manrope
+    font-style: normal
+    font-weight: 800
+    font-size: 16px
+    line-height: 22px
+    color: #231F20
+    background: #FFFFFF
+    border-radius: 8px
+    border: 1px solid #DDDDDD
+
+.search
+    &__body
+        margin: 25px 21.2%
+        width: 1110px
+        height: 74px
+        border-radius: 8px
+        background-color: $colorTwo
+        padding-top: 21px
+    &__form
+        display: flex
+        justify-content: space-between
+        width: 1046px
+        height: 52px
+        margin: auto
+    &__inp-manager
+        padding-right: 123px
+    &__inp-country
+        padding-right: 80px
+    &__inp-dist
+        padding-right: 25px
+        &:after
+            margin-top: 49px
+            content: ""
+            width: 40px
+            height: 2px
+            position: absolute
+            background: $colorOne
+            display: inline-block
+
+    &__btn
+        color: $colorOne
+        background-color: #fff
+        border: 1px solid $colorOne
+        font-size: 15px
+        padding: 16px 30px
 
