@@ -14,7 +14,7 @@
 
 .head__body {
   width: 1144px;
-  margin: auto auto auto 132px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
