@@ -167,36 +167,21 @@ $colorTwo: #F5F7FA
         line-height: 12px
         color: #868686
         text-decoration: none
-    &__checkbox
-        position: absolute
-        z-index: -1
-        opacity: 0
-    &__checkbox+label
-        display: inline-flex
-        align-items: center
-        user-select: none
-    &__checkbox+label::before
-        ntent: ''
-        display: inline-block
-        width: 1em
-        height: 1em
-        flex-shrink: 0
-        flex-grow: 0
-        border: 1px solid #adb5bd
-        border-radius: 0.25em
-        margin-right: 0.5em
-        background-repeat: no-repeat
-        background-position: center center
-        background-size: 50% 50%
     &__check
-        margin: 13px 0 0 28px
+        margin: 13.5px 0 0 28px
         display: block
         font-family: Manrope
         font-style: normal
         font-weight: normal
         font-size: 14px
         color: #231F20
-
+        position: relative
+    &__containerCheck
+        margin-top: 0px
+        height: 120px
+        overflow-y: auto
+    &__containerCheck-scroll
+        margin-top: -5px
 .check__input 
     position: absolute
     width: 1px
