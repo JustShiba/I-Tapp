@@ -1,5 +1,6 @@
 $colorOne: #2E1AAD
 $colorTwo: #F5F7FA
+$colorThree: #231F20
 
 .btn
     background: $colorOne
@@ -13,6 +14,7 @@ $colorTwo: #F5F7FA
     text-align: center
     color: #FFFFFF
     border: none
+    cursor: pointer
 
 .head
     border-bottom: 1px solid #EBEBEB
@@ -130,7 +132,7 @@ $colorTwo: #F5F7FA
     font-weight: normal
     font-size: 14px
     line-height: 24px
-    color: #231F20
+    color: $colorThree
     width: 215px
     border-radius: 4px
     border: 1px solid #DDDDDD
@@ -141,14 +143,15 @@ $colorTwo: #F5F7FA
         width: 1110px
         height: 974px
         margin: 30px auto
-        background-color: $colorTwo
         display: flex
         flex-direction: row
+        justify-content: space-between
     &__filters
         max-width: 280px
         border: 1px solid #DDDDDD
         border-radius: 8px
-        padding: 0 32px
+        padding: 0 19px 0 32px
+        margin-bottom: 47px
     &__title
         margin-top: 28px
     &__filter-drop
@@ -160,6 +163,7 @@ $colorTwo: #F5F7FA
         margin-top: 8px
         font-weight: normal
     &__row-clear
+        max-width: 215px
         justify-content: space-between
     &__clear
         margin-top: 37px
@@ -175,7 +179,7 @@ $colorTwo: #F5F7FA
         font-style: normal
         font-weight: normal
         font-size: 14px
-        color: #231F20
+        color: $colorThree
         position: relative
     &__containerCheck
         margin-top: 0px
@@ -183,6 +187,12 @@ $colorTwo: #F5F7FA
         overflow-y: auto
     &__containerCheck-scroll
         margin-top: -5px
+    &__list
+        max-width: 800px
+        height: 300px
+    &__card
+        margin-bottom: 15px
+
 .check__input 
     position: absolute
     width: 1px
@@ -221,13 +231,97 @@ $colorTwo: #F5F7FA
     flex-direction: row
 
 ::-webkit-input-placeholder
-    color: #231F20
+    color: $colorThree
 
 :-moz-placeholder 
-    color: #231F20
+    color: $colorThree
 
 ::-moz-placeholder
-    color: #231F20
+    color: $colorThree
 
 :-ms-input-placeholder
-    color: #231F20
+    color: $colorThree
+
+.card
+    width: 798px
+    height: 298px
+    border-radius: 8px
+    background-color: $colorTwo
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__left
+        padding: 30px 0 0 33px
+    &__title
+        font-family: Manrope
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        color: #231F20
+        margin-block-start: 0
+        margin-block-end: 5px
+    &__span
+        font-family: Manrope
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 24px
+        color: #666666
+    &__list
+        padding-left: 0
+        margin-block-start: 11px
+        margin-block-end: 0
+    &__listItem
+        list-style-type: none
+        font-family: Manrope
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 22px
+        color: #231F20
+    &__listItem-img
+        margin-right: 5px
+    &__description
+        max-width: 560px
+        margin-block-start: 12px
+        margin-block-end: 0
+    &__right
+        position: relative
+        display: flex
+        flex-direction: column
+        padding: 25px 31px 0 0 
+    &__companyBox
+        position: absolute
+        right: 31px
+        width: 90px
+        height: 90px
+        border: 1px solid #DDDDDD
+        box-sizing: border-box  
+        border-radius: 8px  
+        display: flex
+        align-items: center
+        justify-content: center
+    &__likeImg
+        width: 18px
+        height: 15px
+        margin-right: 9px
+    &__like
+        margin-top: 227px
+        display: flex
+        align-items: center
+.text
+    font-family: Manrope
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: $colorThree
+    &__link
+        text-decoration: none
+        font-family: Manrope
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 35px
+        color: $colorOne
