@@ -189,9 +189,10 @@ $colorThree: #231F20
         margin-top: -5px
     &__list
         max-width: 800px
-        height: 300px
     &__card
-        margin-bottom: 15px
+        margin-bottom: 16px
+    &__tubs
+        margin-top: 17px
 
 .check__input 
     position: absolute
@@ -326,3 +327,109 @@ $colorThree: #231F20
         font-size: 14px
         line-height: 35px
         color: $colorOne
+
+.tub 
+    width: 30px
+    height: 30px
+    margin-right: 8px
+    background: #FFFFFF
+    border: 1px solid #999999
+    border-radius: 4px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: Manrope
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    cursor: pointer
+    z-index: 5
+
+.tubs
+    &__num-active
+        border-color: #05A660
+        color: #05A660
+    &__arrow-left
+        background-color: #999
+        opacity: 0.5
+    &__arrow-right
+        transform: rotate(180deg)
+
+.name
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 900
+    font-size: 30px
+    line-height: 37px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-block-start: 0
+    margin-block-end: 0
+
+.footer
+    margin-top: -182px
+    &__container
+        position: relative
+        left: 0
+        bottom: 0px
+        width: 100%
+        height: 601px
+    &__img
+        width: 100%
+        position: relative
+    &__woman
+        position: absolute
+        right: 5px
+    &__body
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 360px
+        background-color: #0B0D17
+    &__content
+        width: 1105px
+        height: 70%
+        margin: 65px auto
+    &__rights
+        margin-top: 40px
+    &__right
+        font-family: Manrope
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #D9DBE1
+    &__content-left
+        width: 42%
+    &__content-right
+        width: 58%
+    &__navBox
+        list-style-type: none
+        padding: 0 0 0 10px
+        margin: 0 
+    &__title
+        margin-block-start: 0
+        margin-block-end: 0
+        font-family: Manrope
+        font-style: normal
+        font-weight: 800
+        font-size: 20px
+        line-height: 28px
+        color: #FFFFFF
+        margin-bottom: 24px
+    &__navigation
+        display: block
+        margin-top: 12px
+        font-family: Manrope
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        color: #D9DBE1
+        text-decoration: none
+
+.right
+    padding-left: 54px
