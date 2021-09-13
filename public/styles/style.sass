@@ -31,6 +31,7 @@ $colorThree: #231F20
             height: 66px
     &__logo
         margin-left: -37px
+        z-index: 2
         @media (max-width: 320px)
             margin-left: -28px
     &__list
@@ -90,12 +91,73 @@ $colorThree: #231F20
         @media (max-width: 320px)
             width: 67px
             padding-right: 20px
+            justify-content: right
     &__box-left
         display: flex
         flex-direction: row
         align-items: center
         justify-content: space-between
+    &__mobile
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: end
+        justify-content: space-between
+        width: 70px
+    &__mobileWrapper
+        position: absolute
+        width: 100%
+        height: 343px
+        background-color: #fff
+        border: 1px solid #DDDDDD
+        top: 0
+        left: -105%
+        transition: 0.3s
+    &__link-burger
+        text-decoration: none
+        font-family: Manrope
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #231F20
+        padding: 18px 0
+        display: block
+        border-bottom: 1px solid #EBEBEB
+    &__mobileWrapperList
+        list-style: none
+        margin-top: 79px
+        padding: 0 16px
+    &__burger
+        position: relative
+        width: 20px
+        height: 16px
+        z-index: 2
         
+.burger
+    &:before, &:after 
+        content: ""
+        background-color: #0A0B11
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+    &__span
+        content: ""
+        display: block
+        background-color: #0A0B11
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        top: 7px
+    &:before
+        bottom: 0
+    &:after 
+        top: 0
+
+.active
+    left: -2px
 
 .link
     text-decoration: none
@@ -278,7 +340,7 @@ $colorThree: #231F20
         margin-top: -5px
     &__list
         max-width: 800px
-        z-index: 2
+        z-index: 1
     &__card
         margin-bottom: 16px
     &__tubs
@@ -463,7 +525,8 @@ $colorThree: #231F20
     line-height: 20px
     text-align: center
     cursor: pointer
-    z-index: 5
+    z-index: 1
+
 
 .tubs
     &__num-active
