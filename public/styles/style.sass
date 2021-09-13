@@ -19,14 +19,16 @@ $colorThree: #231F20
 .head
     border-bottom: 1px solid #EBEBEB
     &__body
-        width: 1144px
+        max-width: 1144px
+        padding-left: 45px
         margin: auto
         display: flex
         flex-direction: row
         align-items: center
+        justify-content: space-between
         height: 80px
     &__logo
-        margin-left: -15px
+        margin-left: -37px
     &__list
         list-style-type: none
         display: flex
@@ -35,7 +37,6 @@ $colorThree: #231F20
         margin-block-start: 0
         margin-block-end: 0
         padding-left: 0
-        margin-left: 27px
     &__list-left
         margin-left: 27px
     &__link-active
@@ -51,12 +52,13 @@ $colorThree: #231F20
             background: $colorOne
             display: inline-block
     &__list-right
-        margin-left: 244px
+        //margin-left: 244px
     &__btns
-        width: 215px
-        margin-left: 48px
+        max-width: 215px
+        margin-left: 10px
         display: flex
         justify-content: space-between
+        flex: 0 1 50%
     &__btn-white
         border: 1px solid $colorOne
         background-color: #fff
@@ -65,6 +67,22 @@ $colorThree: #231F20
     &__btn-blue
     &__listItem
         margin-left: 32px
+        @media (max-width:980px)
+            margin-left: 20px
+    &__box-right
+        padding-right: 36px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 535px
+        @media (max-width: 980px)
+            padding-right: 10px
+    &__box-left
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
 
 .link
     text-decoration: none
@@ -91,7 +109,7 @@ $colorThree: #231F20
 .search
     &__body
         margin: 25px auto
-        width: 1110px
+        max-width: 1110px
         height: 74px
         border-radius: 8px
         background-color: $colorTwo
@@ -99,16 +117,24 @@ $colorThree: #231F20
     &__form
         display: flex
         justify-content: space-between
-        width: 1046px
+        max-width: 1046px
         height: 52px
         margin: auto
+        @media (max-width: 980px)
+            padding: 0 10px
     &__inp-manager
         padding-right: 123px
+        @media (max-width: 980px)
+            padding-right: 50px
     &__inp-country
         padding-right: 80px
+        @media (max-width: 980px)
+            padding-right: 30px
     &__inp-dist
         padding-left: 14px
         padding-right: 151px
+        @media (max-width: 980px)
+            padding-right: 90px
     &__btn
         color: $colorOne
         background-color: #fff
@@ -133,14 +159,14 @@ $colorThree: #231F20
     font-size: 14px
     line-height: 24px
     color: $colorThree
-    width: 215px
+    max-width: 215px
     border-radius: 4px
     border: 1px solid #DDDDDD
     background-color: inherit
 
 .results
     &__body
-        width: 1110px
+        max-width: 1110px
         height: 974px
         margin: 30px auto
         display: flex
@@ -189,6 +215,7 @@ $colorThree: #231F20
         margin-top: -5px
     &__list
         max-width: 800px
+        z-index: 2
     &__card
         margin-bottom: 16px
     &__tubs
@@ -244,13 +271,14 @@ $colorThree: #231F20
     color: $colorThree
 
 .card
-    width: 798px
+    max-width: 800px
     height: 298px
     border-radius: 8px
     background-color: $colorTwo
     display: flex
     flex-direction: row
     justify-content: space-between
+    flex: 1 1 50%
     &__left
         padding: 30px 0 0 33px
     &__title
@@ -292,6 +320,7 @@ $colorThree: #231F20
         display: flex
         flex-direction: column
         padding: 25px 31px 0 0 
+        margin-left: 16px
     &__companyBox
         position: absolute
         right: 31px
@@ -374,10 +403,10 @@ $colorThree: #231F20
         position: relative
         left: 0
         bottom: 0px
-        width: 100%
+        max-width: 100%
         height: 601px
     &__img
-        width: 100%
+        max-width: 100%
         position: relative
     &__woman
         position: absolute
@@ -390,7 +419,7 @@ $colorThree: #231F20
         height: 360px
         background-color: #0B0D17
     &__content
-        width: 1105px
+        max-width: 1105px
         height: 70%
         margin: 65px auto
     &__rights
@@ -404,6 +433,8 @@ $colorThree: #231F20
         color: #D9DBE1
     &__content-left
         width: 42%
+        @media (max-width: 1135px)
+            padding-left: 15px
     &__content-right
         width: 58%
     &__navBox

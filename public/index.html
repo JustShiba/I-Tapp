@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/style.sass">
     <link rel="stylesheet" href="styles/normilize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +15,25 @@
 <body>
     <header class="head">
         <div class="head__body">
-            <div class="head__logo logo">
-                <img src="images/vector/logo.svg" alt="logo">
+            <div class="head__box-left">
+                <div class="head__logo logo">
+                    <img src="images/vector/logo.svg" alt="logo">
+                </div>
+                <ul class="head__list-left head__list">
+                    <li class="head__listItem"><a href="#" class="head__link-active link">Home</a></li>
+                    <li class="head__listItem"><a href="#" class="link">News</a></li>
+                    <li class="head__listItem"><a href="#" class="link">About</a></li>
+                </ul>
             </div>
-            <ul class="head__list-left head__list">
-                <li class="head__listItem"><a href="#" class="head__link-active link">Home</a></li>
-                <li class="head__listItem"><a href="#" class="link">News</a></li>
-                <li class="head__listItem"><a href="#" class="link">About</a></li>
-            </ul>
-            <ul class="head__list-right head__list">
-                <li class="head__listItem"><a href="#" class="link">For Employers</a></li>
-                <li class="head__listItem"><a href="#" class="link">For Headhunters</a></li>
-            </ul>
-            <div class="head__btns">
-                <button class="head__btn-white btn">Login</button>
-                <button class="head__btn-blue btn">Sign up</button>
+            <div class="head__box-right">
+                <ul class="head__list-right head__list">
+                    <li class="head__listItem"><a href="#" class="link">For Employers</a></li>
+                    <li class="head__listItem"><a href="#" class="link">For Headhunters</a></li>
+                </ul>
+                <div class="head__btns">
+                    <button class="head__btn-white btn">Login</button>
+                    <button class="head__btn-blue btn">Sign up</button>
+                </div>
             </div>
         </div>
 
