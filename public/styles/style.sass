@@ -232,6 +232,7 @@ $colorThree: #231F20
         @media (max-width: 320px)
             margin: 12px auto
             display: block
+            height: initial
     &__filters
         max-width: 280px
         border: 1px solid #DDDDDD
@@ -486,15 +487,21 @@ $colorThree: #231F20
     margin-block-end: 0
 
 .footer
-    @media (max-width: 320px)
-        display: none
     margin-top: -182px
+    @media (max-width: 320px)
+        margin-top: 0
     &__container
         position: relative
         left: 0
         bottom: 0px
         max-width: 100%
         height: 601px
+        display: flex
+        flex-direction: row
+        @media (max-width: 320px)
+            flex-direction: column
+            height: initial
+            position: initial
     &__img
         max-width: 100%
         position: relative
@@ -508,12 +515,23 @@ $colorThree: #231F20
         width: 100%
         height: 360px
         background-color: #0B0D17
+        @media (max-width: 320px)
+            position: initial
+            height: initial
     &__content
         max-width: 1105px
         height: 70%
         margin: 65px auto
+        @media (max-width: 320px)
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 43px auto
+            text-align: center
     &__rights
         margin-top: 40px
+        @media (max-width: 320px)
+            margin-top: 18px
     &__right
         font-family: Manrope
         font-style: normal
@@ -521,12 +539,24 @@ $colorThree: #231F20
         font-size: 14px
         line-height: 20px
         color: #D9DBE1
+        @media (max-width: 320px)
+            display: block
+            width: 157px
+            margin-left: -10px
+
     &__content-left
         width: 42%
         @media (max-width: 1135px)
             padding-left: 15px
+        @media (max-width: 320px)
+            order: 1
+            padding-left: 0px
+            padding-top: 38px
     &__content-right
         width: 58%
+        @media (max-width: 320px)
+            display: flex
+            flex-direction: column
     &__navBox
         list-style-type: none
         padding: 0 0 0 10px
@@ -541,6 +571,10 @@ $colorThree: #231F20
         line-height: 28px
         color: #FFFFFF
         margin-bottom: 24px
+        @media (max-width: 320px)
+            font-size: 18px
+            line-height: 26px
+
     &__navigation
         display: block
         margin-top: 12px
@@ -554,6 +588,9 @@ $colorThree: #231F20
 
 .right
     padding-left: 54px
+    @media (max-width: 320px)
+        padding-left: 0px
+        padding-top: 26px
 
 .displayMobile
     display: none
