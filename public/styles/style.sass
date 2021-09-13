@@ -27,8 +27,12 @@ $colorThree: #231F20
         align-items: center
         justify-content: space-between
         height: 80px
+        @media (max-width: 320px)
+            height: 66px
     &__logo
         margin-left: -37px
+        @media (max-width: 320px)
+            margin-left: -28px
     &__list
         list-style-type: none
         display: flex
@@ -39,6 +43,8 @@ $colorThree: #231F20
         padding-left: 0
     &__list-left
         margin-left: 27px
+        @media (max-width: 320px)
+            display: none
     &__link-active
         color: $colorOne!important
         display: block
@@ -52,13 +58,16 @@ $colorThree: #231F20
             background: $colorOne
             display: inline-block
     &__list-right
-        //margin-left: 244px
+        @media (max-width: 320px)
+            display: none
     &__btns
         max-width: 215px
         margin-left: 10px
         display: flex
         justify-content: space-between
         flex: 0 1 50%
+        @media (max-width: 320px)
+            display: none
     &__btn-white
         border: 1px solid $colorOne
         background-color: #fff
@@ -78,11 +87,15 @@ $colorThree: #231F20
         width: 535px
         @media (max-width: 980px)
             padding-right: 10px
+        @media (max-width: 320px)
+            width: 67px
+            padding-right: 20px
     &__box-left
         display: flex
         flex-direction: row
         align-items: center
         justify-content: space-between
+        
 
 .link
     text-decoration: none
@@ -100,13 +113,14 @@ $colorThree: #231F20
     font-weight: 800
     font-size: 16px
     line-height: 22px
-    
-
     background: #FFFFFF
     border-radius: 8px
     border: 1px solid #DDDDDD
+    @media (max-width: 320px)
+        padding: 13px 0 15px 15px
 
 .search
+
     &__body
         margin: 25px auto
         max-width: 1110px
@@ -114,6 +128,11 @@ $colorThree: #231F20
         border-radius: 8px
         background-color: $colorTwo
         padding-top: 21px
+        @media (max-width: 320px)
+            margin: 0
+            height: 261px
+            border-radius: 0
+
     &__form
         display: flex
         justify-content: space-between
@@ -122,25 +141,63 @@ $colorThree: #231F20
         margin: auto
         @media (max-width: 980px)
             padding: 0 10px
+        @media (max-width: 320px)
+            flex-wrap: wrap
+            padding-left: 20px
+
     &__inp-manager
         padding-right: 123px
         @media (max-width: 980px)
             padding-right: 50px
+        @media (max-width: 320px)
+            padding-right: 74px
     &__inp-country
         padding-right: 80px
         @media (max-width: 980px)
             padding-right: 30px
+        @media (max-width: 320px)
+            max-width: 40%
+            margin-top: 15px
+            padding-right: 0
     &__inp-dist
         padding-left: 14px
         padding-right: 151px
         @media (max-width: 980px)
             padding-right: 90px
+        @media (max-width: 320px)
+            padding-right: 52px
+            margin-right: 11px
+            margin-top: 15px
+            height: 50px
+            padding-left: 10px
+
+    &__butFilters
+        color: $colorOne
+        background-color: #fff
+        border: 1px solid $colorOne
+        font-size: 16px
+        padding: 15px 30px
+        @media (max-width: 320px)
+            margin-top: 14px
     &__btn
         color: $colorOne
         background-color: #fff
         border: 1px solid $colorOne
         font-size: 15px
         padding: 16px 30px
+        @media (max-width: 320px)
+            width: 280px
+            margin-top: 12px
+            color: #fff
+            background-color: $colorOne
+            font-size: 16px
+
+
+    &__btnsCont
+        display: flex
+        flex-direction: row
+        @media (max-width: 320px)
+            flex-direction: column
 
 .title
     font-family: Manrope
@@ -172,12 +229,17 @@ $colorThree: #231F20
         display: flex
         flex-direction: row
         justify-content: space-between
+        @media (max-width: 320px)
+            margin: 12px auto
+            display: block
     &__filters
         max-width: 280px
         border: 1px solid #DDDDDD
         border-radius: 8px
         padding: 0 19px 0 32px
         margin-bottom: 47px
+        @media (max-width: 320px)
+            display: none
     &__title
         margin-top: 28px
     &__filter-drop
@@ -279,8 +341,14 @@ $colorThree: #231F20
     flex-direction: row
     justify-content: space-between
     flex: 1 1 50%
+    @media (max-width: 320px)
+        height: initial
+        border-radius: 0
+        padding-bottom: 13px
     &__left
         padding: 30px 0 0 33px
+        @media (max-width: 320px)
+            padding: 16px 0px 0 21px
     &__title
         font-family: Manrope
         font-style: normal
@@ -290,6 +358,9 @@ $colorThree: #231F20
         color: #231F20
         margin-block-start: 0
         margin-block-end: 5px
+        @media (max-width: 320px)
+            font-size: 18px
+            margin-block-end: 2px
     &__span
         font-family: Manrope
         font-style: normal
@@ -301,6 +372,8 @@ $colorThree: #231F20
         padding-left: 0
         margin-block-start: 11px
         margin-block-end: 0
+        @media (max-width: 320px)
+            margin-block-start: 10px
     &__listItem
         list-style-type: none
         font-family: Manrope
@@ -315,12 +388,16 @@ $colorThree: #231F20
         max-width: 560px
         margin-block-start: 12px
         margin-block-end: 0
+        @media (max-width: 320px)
+            max-width: 275px
     &__right
         position: relative
         display: flex
         flex-direction: column
         padding: 25px 31px 0 0 
         margin-left: 16px
+        @media (max-width: 320px)
+            padding: 0 
     &__companyBox
         position: absolute
         right: 31px
@@ -336,10 +413,19 @@ $colorThree: #231F20
         width: 18px
         height: 15px
         margin-right: 9px
+        @media (max-width: 320px)
+            position: absolute
+            top: 18px
+            right: 10px
+            width: 22px
+            height: 22px
     &__like
         margin-top: 227px
         display: flex
         align-items: center
+        @media (max-width: 320px)
+            position: relative
+            margin-top: 0
 
 .text
     font-family: Manrope
@@ -398,6 +484,8 @@ $colorThree: #231F20
     margin-block-end: 0
 
 .footer
+    @media (max-width: 320px)
+        display: none
     margin-top: -182px
     &__container
         position: relative
@@ -464,3 +552,6 @@ $colorThree: #231F20
 
 .right
     padding-left: 54px
+
+.displayMobile
+    display: none
