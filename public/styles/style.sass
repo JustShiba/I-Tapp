@@ -27,12 +27,12 @@ $colorThree: #231F20
         align-items: center
         justify-content: space-between
         height: 80px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             height: 66px
     &__logo
         margin-left: -37px
         z-index: 2
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin-left: -28px
     &__list
         list-style-type: none
@@ -80,7 +80,7 @@ $colorThree: #231F20
         @media (max-width:1024px)
             margin-left: 20px
     &__box-right
-        padding-right: 36px
+        padding-right: 41px
         display: flex
         flex-direction: row
         align-items: center
@@ -190,7 +190,7 @@ $colorThree: #231F20
     background: #FFFFFF
     border-radius: 8px
     border: 1px solid #DDDDDD
-    @media (max-width: 320px)
+    @media (max-width: 600px)
         padding: 13px 0 15px 15px
 
 .search
@@ -204,7 +204,7 @@ $colorThree: #231F20
         @media (max-width: 1130px)
             margin: 15px 10px
             padding: 21px 5px 0 5px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin: 0
             padding: 21px 0 0 0 
             height: 261px
@@ -217,8 +217,10 @@ $colorThree: #231F20
         margin: auto
         @media (max-width: 1000px)
             padding: 0 10px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
+            padding-left: 10px
             flex-wrap: wrap
+        @media (max-width: 320px)
             padding-left: 20px
     &__inp-manager
         padding-right: 123px
@@ -228,8 +230,13 @@ $colorThree: #231F20
             padding-right: 25px
         @media (max-width: 755px)
             padding-right: 10px
+        @media (max-width: 600px)
+            padding-right: 0
+            width: 100%
+            text-align: center
         @media (max-width: 320px)
             padding-right: 74px
+            width: initial
     &__inp-country
         padding-right: 80px
         @media (max-width: 1000px)
@@ -240,10 +247,13 @@ $colorThree: #231F20
             width: 80px
         @media (max-width: 755px)
             padding-right: 5px
+        @media (max-width: 600px)
+            width: 43%
+            margin-top: 15px
+            padding-right: 0
         @media (max-width: 320px)
             max-width: 40%
             margin-top: 15px
-            padding-right: 0
     &__inp-dist
         padding-left: 14px
         padding-right: 151px
@@ -253,13 +263,19 @@ $colorThree: #231F20
             padding-right: 45px
         @media (max-width: 755px)
             padding-right: 20px
+        @media (max-width: 600px)
+            padding-right: 52px
+            margin-right: 0px
+            margin-top: 15px
+            padding-left: 10px
+            width: 48%
         @media (max-width: 320px)
             padding-right: 52px
             margin-right: 11px
             margin-top: 15px
             height: 50px
             padding-left: 10px
-
+            width: initial
     &__butFilters
         display: none
         color: $colorOne
@@ -267,7 +283,7 @@ $colorThree: #231F20
         border: 1px solid $colorOne
         font-size: 16px
         padding: 15px 30px
-        @media (max-width: 500px)
+        @media (max-width: 600px)
             margin-top: 14px
             display: initial
     &__btn
@@ -276,20 +292,22 @@ $colorThree: #231F20
         border: 1px solid $colorOne
         font-size: 15px
         padding: 16px 30px
-        @media (max-width: 320px)
-            width: 280px
+        @media (max-width: 600px)
+            width: 100%
             margin-top: 12px
             color: #fff
             background-color: $colorOne
             font-size: 16px
-
-
+        @media (max-width: 320px)
+            width: 280px
     &__btnsCont
         display: flex
         flex-direction: row
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             flex-direction: column
-
+            width: 100%
+        @media (max-width: 320px)
+            width: initial
 .title
     font-family: Manrope
     font-style: normal
@@ -322,7 +340,7 @@ $colorThree: #231F20
         justify-content: space-between
         @media (max-width: 1130px)
             margin: 15px 10px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin: 12px auto
             display: block
             height: initial
@@ -334,7 +352,7 @@ $colorThree: #231F20
         margin-bottom: 47px
         @media (max-width: 880px)
             padding: 0px 10px 0 15px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             display: none
     &__title
         margin-top: 28px
@@ -382,7 +400,7 @@ $colorThree: #231F20
         margin-bottom: 16px
     &__tubs
         margin-top: 17px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin: 35px 20px
 
 .check__input 
@@ -445,7 +463,7 @@ $colorThree: #231F20
     flex: 1 1 50%
     @media (max-width: 790px)
         height: initial
-    @media (max-width: 500px)
+    @media (max-width: 600px)
         height: initial
         border-radius: 0
         padding-bottom: 13px
@@ -455,6 +473,8 @@ $colorThree: #231F20
             padding: 20px 0 20px 25px
         @media (max-width: 650px)
             padding: 16px 0px 10px 21px
+        @media (max-width: 320px)
+            padding: 16px 0px 0px 21px
     &__title
         font-family: Manrope
         font-style: normal
@@ -464,7 +484,7 @@ $colorThree: #231F20
         color: #231F20
         margin-block-start: 0
         margin-block-end: 5px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             font-size: 18px
             margin-block-end: 2px
     &__span
@@ -479,7 +499,7 @@ $colorThree: #231F20
         padding-left: 0
         margin-block-start: 11px
         margin-block-end: 0
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin-block-start: 10px
     &__listItem
         list-style-type: none
@@ -495,7 +515,7 @@ $colorThree: #231F20
         max-width: 560px
         margin-block-start: 12px
         margin-block-end: 0
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             max-width: 275px
     &__right
         position: relative
@@ -503,7 +523,7 @@ $colorThree: #231F20
         flex-direction: column
         padding: 25px 31px 0 0 
         margin-left: 16px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             padding: 0 
     &__companyBox
         position: absolute
@@ -520,7 +540,7 @@ $colorThree: #231F20
         width: 18px
         height: 15px
         margin-right: 9px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             position: absolute
             top: 18px
             right: 10px
@@ -530,7 +550,7 @@ $colorThree: #231F20
         margin-top: 227px
         display: flex
         align-items: center
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             position: relative
             margin-top: 0
 
@@ -592,7 +612,7 @@ $colorThree: #231F20
 
 .footer
     margin-top: -182px
-    @media (max-width: 320px)
+    @media (max-width: 600px)
         margin-top: 0
     &__container
         position: relative
@@ -602,7 +622,7 @@ $colorThree: #231F20
         height: 601px
         display: flex
         flex-direction: row
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             flex-direction: column
             height: initial
             position: initial
@@ -619,14 +639,14 @@ $colorThree: #231F20
         width: 100%
         height: 360px
         background-color: #0B0D17
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             position: initial
             height: initial
     &__content
         max-width: 1105px
         height: 70%
         margin: 65px auto
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             display: flex
             flex-direction: column
             align-items: center
@@ -634,7 +654,7 @@ $colorThree: #231F20
             text-align: center
     &__rights
         margin-top: 40px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             margin-top: 18px
     &__right
         font-family: Manrope
@@ -643,8 +663,9 @@ $colorThree: #231F20
         font-size: 14px
         line-height: 20px
         color: #D9DBE1
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             display: block
+        @media (max-width: 375px)
             width: 157px
             margin-left: -10px
 
@@ -652,13 +673,13 @@ $colorThree: #231F20
         width: 42%
         @media (max-width: 1135px)
             padding-left: 15px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             order: 1
             padding-left: 0px
             padding-top: 38px
     &__content-right
         width: 58%
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             display: flex
             flex-direction: column
     &__navBox
@@ -675,7 +696,7 @@ $colorThree: #231F20
         line-height: 28px
         color: #FFFFFF
         margin-bottom: 24px
-        @media (max-width: 320px)
+        @media (max-width: 600px)
             font-size: 18px
             line-height: 26px
 
@@ -692,7 +713,7 @@ $colorThree: #231F20
 
 .right
     padding-left: 54px
-    @media (max-width: 320px)
+    @media (max-width: 600px)
         padding-left: 0px
         padding-top: 26px
 
